@@ -1,0 +1,329 @@
+﻿<style type="text/css">
+    #miscFormDijits td
+    {
+        padding-right: 10px;
+    }
+</style>
+<div class="TabPane">
+    <form data-dojo-type="dijit/form/Form">
+    <div class="formContainer" dojotype="dijit.layout.TabContainer" style="height: 550px">
+        <div dojotype="dijit.layout.ContentPane" title="1">
+            <table id="miscFormDijits" cellspacing="10">
+                <tbody>
+                    <tr>
+                        <!--textbox-->
+                        <td>
+                            <label for="tb1">
+                                组织机构名称：</label>
+                        </td>
+                        <td>
+                            <input id="tb1" name="tb1" type="text" data-dojo-type="dijit/form/TextBox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--textbox-->
+                        <td>
+                            <label for="tb2">
+                                视频档案地址：</label>
+                        </td>
+                        <td>
+                            <input id="tb2" name="tb2" type="text" data-dojo-type="dijit/form/TextBox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--textbox-->
+                        <td>
+                            <label for="tb3">
+                                视频点播地址：</label>
+                        </td>
+                        <td>
+                            <input id="tb3" name="tb3" type="text" data-dojo-type="dijit/form/TextBox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--textbox-->
+                        <td>
+                            <label for="tb4">
+                                交发系统地址：</label>
+                        </td>
+                        <td>
+                            <input id="tb4" name="tb4" type="text" data-dojo-type="dijit/form/TextBox" />
+                        </td>
+                        <td>
+                            (请参照此格式：<a href>http://server：port</a>)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div dojotype="dijit.layout.ContentPane" title="2">
+            <table id="miscFormDijits" cellspacing="10">
+                <tbody>
+                    <tr>
+                        <!--checkbox-->
+                        <td>
+                            <label for="cb1">
+                                用数字笔审修</label>
+                        </td>
+                        <td>
+                            <input id="cb1" name="cb1" type="checkbox" data-dojo-type="dijit/form/CheckBox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--checkbox-->
+                        <td>
+                            <label for="cb2">
+                                要求审修用户身份验证（多人审修）</label>
+                        </td>
+                        <td>
+                            <input id="cb2" name="cb2" type="checkbox" data-dojo-type="dijit/form/CheckBox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--filteringselect-->
+                        <td>
+                            <label for="fs1">
+                                审修室用户：</label>
+                        </td>
+                        <td>
+                            <select id="fs1" name="fs1" data-dojo-type="dijit/form/FilteringSelect">
+                                <option value="1">审修</option>
+                                <option value="2">秘书处处员</option>
+                                <option value="3">主管主任</option>
+                                <option value="4">开发用户</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--filteringselect-->
+                        <td>
+                            <label for="fs2">
+                                给文号用户：</label>
+                        </td>
+                        <td>
+                            <select id="fs2" name="fs2" data-dojo-type="dijit/form/FilteringSelect">
+                                <option value="1">审修</option>
+                                <option value="2">秘书处处员</option>
+                                <option value="3">主管主任</option>
+                                <option value="4">开发用户</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--filteringselect-->
+                        <td>
+                            <label for="fs3">
+                                标记签发用户：</label>
+                        </td>
+                        <td>
+                            <select id="fs3" name="fs3" data-dojo-type="dijit/form/FilteringSelect">
+                                <option value="1">审修</option>
+                                <option value="2">秘书处处员</option>
+                                <option value="3">主管主任</option>
+                                <option value="4">开发用户</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--filteringselect-->
+                        <td>
+                            <label for="fs4">
+                                清稿用户：</label>
+                        </td>
+                        <td>
+                            <select id="fs4" name="fs4" data-dojo-type="dijit/form/FilteringSelect">
+                                <option value="1">审修</option>
+                                <option value="2">秘书处处员</option>
+                                <option value="3">主管主任</option>
+                                <option value="4">开发用户</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--filteringselect-->
+                        <td>
+                            <label for="fs5">
+                                非承办部门可以写拟办意见的用户：</label>
+                        </td>
+                        <td>
+                            <select id="fs5" name="fs5" data-dojo-type="dijit/form/FilteringSelect">
+                                <option value="1">审修</option>
+                                <option value="2">秘书处处员</option>
+                                <option value="3">主管主任</option>
+                                <option value="4">开发用户</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--filteringselect-->
+                        <td>
+                            <label for="fs6">
+                                可以写分管主任意见的用户：</label>
+                        </td>
+                        <td>
+                            <select id="fs6" name="fs6" data-dojo-type="dijit/form/FilteringSelect">
+                                <option value="1">审修</option>
+                                <option value="2">秘书处处员</option>
+                                <option value="3">主管主任</option>
+                                <option value="4">开发用户</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--filteringselect-->
+                        <td>
+                            <label for="fs7">
+                                非承办部门可以改落实情况的用户：</label>
+                        </td>
+                        <td>
+                            <select id="fs7" name="fs7" data-dojo-type="dijit/form/FilteringSelect">
+                                <option value="1">审修</option>
+                                <option value="2">秘书处处员</option>
+                                <option value="3">主管主任</option>
+                                <option value="4">开发用户</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--filteringselect-->
+                        <td>
+                            <label for="fs8">
+                                追踪所有办件用户：</label>
+                        </td>
+                        <td>
+                            <select id="fs8" name="fs8" data-dojo-type="dijit/form/FilteringSelect">
+                                <option value="1">审修</option>
+                                <option value="2">秘书处处员</option>
+                                <option value="3">主管主任</option>
+                                <option value="4">开发用户</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--checkbox-->
+                        <td>
+                            <label for="cb3">
+                                归档时将自编号转为分类号</label>
+                        </td>
+                        <td>
+                            <input id="cb3" name="cb3" type="checkbox" data-dojo-type="dijit/form/CheckBox" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div dojotype="dijit.layout.ContentPane" title="3">
+            <table id="miscFormDijits" cellspacing="10">
+                <tbody>
+                    <tr>
+                        <!--filteringselect-->
+                        <td>
+                            <label for="fs10">
+                                承办单批示排序：</label>
+                        </td>
+                        <td>
+                            <select id="fs10" name="fs10" data-dojo-type="dijit/form/FilteringSelect">
+                                <option value="1">按时间升序</option>
+                                <option value="2">按时间降序</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--numbertextbox-->
+                        <td>
+                            <label for="ntb1">
+                                办件阶段时限（普通件）：</label>
+                        </td>
+                        <td>
+                            <input id="ns1" name="ns1" type="text" data-dojo-type="dijit/form/NumberSpinner" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--numbertextbox-->
+                        <td>
+                            <label for="ntb2">
+                                办件阶段时限（急件）：</label>
+                        </td>
+                        <td>
+                            <input id="ns2" name="ns2" type="text" data-dojo-type="dijit/form/NumberSpinner" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--checkbox-->
+                        <td>
+                            <label for="cb4">
+                                非承办部门可以归档文件</label>
+                        </td>
+                        <td>
+                            <input id="cb4" name="cb4" type="checkbox" data-dojo-type="dijit/form/CheckBox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--checkbox-->
+                        <td>
+                            <label for="cb5">
+                                承办部门可以清稿</label>
+                        </td>
+                        <td>
+                            <input id="cb5" name="cb5" type="checkbox" data-dojo-type="dijit/form/CheckBox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--checkbox-->
+                        <td>
+                            <label for="cb6">
+                                发文单中不显示主办处室</label>
+                        </td>
+                        <td>
+                            <input id="cb6" name="cb6" type="checkbox" data-dojo-type="dijit/form/CheckBox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--checkbox-->
+                        <td>
+                            <label for="cb7">
+                                清稿用户可以根据发文建正式公文</label>
+                        </td>
+                        <td>
+                            <input id="cb7" name="cb7" type="checkbox" data-dojo-type="dijit/form/CheckBox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--filteringselect-->
+                        <td>
+                            <label for="fs11">
+                                默认“转发给”用户设置规则：</label>
+                        </td>
+                        <td>
+                            <select id="fs11" name="fs11" data-dojo-type="dijit/form/FilteringSelect">
+                                <option value="1">不自动设置默认用户（用户个性设置有效）</option>
+                                <option value="2">自动设置默认用户（用户个性设置有效）</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--checkbox-->
+                        <td>
+                            <label for="cb8">
+                                屏蔽分支流转功能</label>
+                        </td>
+                        <td>
+                            <input id="cb8" name="cb8" type="checkbox" data-dojo-type="dijit/form/CheckBox" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <!--checkbox-->
+                        <td>
+                            <label for="cb9">
+                                文件流转给笔输入用户前提示转换</label>
+                        </td>
+                        <td>
+                            <input id="cb9" name="cb9" type="checkbox" data-dojo-type="dijit/form/CheckBox" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </form>
+</div>
